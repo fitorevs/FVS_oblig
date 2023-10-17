@@ -3,55 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Forside for SNKR</title>
-    <script src="https://kit.fontawesome.com/b54fb73deb.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <i class="fa-regular fa-bars"></i>
-        <span>
-            <a href="#">SNKR.</a>
-        </span>
-        <nav>
-            <ul>
-                <li><a href="#">KVINNER</a></li>
-                <li><a href="#">MENN</a></li>
-                <li><a href="#">BARN</a></li>
-                <li><a href="#">TILBEHØR</a></li>
-                <li><a href="#">NYHETER</a></li>
-                <li><a href="#">MERKER</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="default-flex">
-            <img src="https://placehold.co/600x400" alt="Kampanjebilde">
-            <article>
-                <h2>Nyheter</h2>
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-            </article>
-            <article>
-            <h2>Bestselgere</h2>
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-            </article>
-            <article>
-                <h2>Populære merkevarer</h2>
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-                <img src="https://placehold.co/600x400" alt="Skobilde">
-            </article>
-        </section>
-    </main>
-</body>
+    <body>
+    <div id="grid-container">
+        <header>
+            <nav>
+                <a href="#" id="logo">SNKR.</a>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="category">
+                    <li><a href="#">KVINNER</a></li>
+                    <li><a href="#">MENN</a></li>
+                    <li><a href="#">BARN</a></li>
+                    <li><a href="#">TILBEHØR</a></li>
+                    <li><a href="#">NYHETER</a></li>
+                    <li><a href="#">MERKER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="default-flex">
+                <img src="https://placehold.co/600x400" alt="Kampanjebilde">
+                <p>*Gjelder kun utvalgte merkevarer.</p>
+                <article>
+                    <h2>Nyheter</h2>
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                </article>
+                <article>
+                <h2>Bestselgere</h2>
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                </article>
+                <article>
+                    <h2>Populære merkevarer</h2>
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                    <img src="https://placehold.co/600x400" alt="Skobilde">
+                </article>
+             </section>
+             <section id="offer">
+                <h3>Få 20% rabatt på din favorittvare</h3>
+                <p>*Medlemmer får 20% rabatt på en valgfri ordinær vare. Gjelder kun én gang. Tilbudet kan ikke kombineres med andre rabattkoder.</p>
+             </section>
+             <section id="sign-up">
+                <a href="#" class="black-btn">BLI MEDLEM</a>
+             </section>
+             <section id="read-more">
+                <a href="#" class="black-btn">LES MER</a>
+             </section>
+        </main>
+        <footer class="site-footer">
+            <nav>
+                <ul>
+                    <li><a href="hjelp.html">HJELP</a></li>
+                    <li><a href="#">MIN SIDE</a></li>
+                    <li><a href="#">KONTAKT OSS</a></li>
+                    <li><a href="#">VILKÅR</a></li>
+                    <li><a href="#">SNKR.</a></li>
+                    <li><a href="#">FØLG OSS</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
 </html>
