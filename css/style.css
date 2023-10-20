@@ -1,0 +1,16 @@
+.navbar {
+    display: none;
+}
+
+/* Styler responsiv navigasjonsmeny */
+.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    width: 100%;
+    list-style: none;
+}
