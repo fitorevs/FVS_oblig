@@ -2,9 +2,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#grid-container {
+#flex-container {
     display: grid;
     grid-template-areas: "header" "main" "footer";
+}
+
+.grid-container {
+    display: inline-block;
 }
 
 header, main, footer {
@@ -25,17 +29,11 @@ header nav {
     text-align: center;
 }
 
-/* Skjuler menyikoner i header */
-#ham, .fa-magnifying-glass {
-    display: none;
-}
-
 #logo {
     text-decoration: none;
     color: #fff;
     font-style: italic;
     font-size: 30px;
-    
 }
 
 .icons {
@@ -45,11 +43,6 @@ header nav {
 
 .navbar {
     display: none;
-}
-
-#grid-container {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
 }
 
 .responsive {
@@ -84,9 +77,23 @@ h1 {
     font-weight: 150;
 }
 
+.left-btn {
+    display: inline-block;
+
+}
+
 .product-info {
     background-color: #f7f7f7;
+    padding: 1rem;
+    justify-content: space-around;
 }
+
+.delivery-info {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
 .offer {
     display: inline-block;
     padding: 1rem;
@@ -96,7 +103,15 @@ h1 {
     border-radius: 5px;
     font-weight: 400;
 }
-
+.black-btn {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: black;
+    color: #D9D9D9;
+    border-radius: 5px;
+    font-weight: 400;
+}
 .grey-btn {
     display: inline-block;
     padding: 1rem;
@@ -118,31 +133,22 @@ h1 {
     font-weight: 500;
 }
 
-.default-flex {
-    display: grid;
-}
-
 .site-footer {
     background-color: #C6BBBB;
     color: #fff;
-    box-sizing: border-box;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
+
 }
 
-ul li a{
+ul li a {
     list-style: none; 
     font-size: 16px;
     color: #fff;
     text-decoration: none;
-    display: block;
-}
-
-.default-flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    margin-right: 10px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -170,22 +176,5 @@ ul li a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    /* Reduserer bildenes bredde til 50% i flex-seksjoner */
-    .flex-section img {
-        width: 50%;
-    }
-
-    /* Legger til litt mellomrom og justering i flex-seksjoner */
-    .flex-section section {
-        padding: 1rem;
-        width: 40%;
-        align-self: center;
-    }
-
-    /* Endrer rekkefølgen av bilde og tekst i høyrejusterte seksjoner */
-    .right img {
-        order: 1;
     }
 }
