@@ -1,16 +1,191 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header, main, footer {
+    padding: 1rem;
+}
+
+header {
+    background-color: #C6BBBB;
+    font-size: 1.5rem;
+    font-weight: 600;
+    grid-area: header;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+}
+
+/* Skjuler menyikoner i header */
+#ham, .fa-magnifying-glass {
+    display: none;
+}
+
+#logo {
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    font-size: 30px;
+    
+}
+
+.icons {
+    color: #fff;
+    margin-top: auto;
+}
+
 .navbar {
     display: none;
 }
 
-/* Styler responsiv navigasjonsmeny */
+#grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
 .responsive {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #242424;
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
     top: 40px;
     width: 100%;
     list-style: none;
+}
+
+.responsive a {
+    color: rgba(21, 21, 21, 0.706);
+    font-weight: 200;
+    display: inline-block;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+}
+
+main section img {
+    width: 100%;
+}
+
+h1 {
+    font-weight: 150;
+}
+
+.product-info {
+    background-color: #f7f7f7;
+}
+.offer {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #C6BBBB;
+    color: black;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.grey-btn {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #D9D9D9;
+    color: black;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    justify-content: space-around;
+    padding: 1.5rem;
+    text-decoration: none;
+    background-color: #D9D9D9;
+    color: black;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.default-flex {
+    display: grid;
+}
+
+.site-footer {
+    background-color: #C6BBBB;
+    color: #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li a{
+    list-style: none; 
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.default-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+@media only screen and (min-width: 600px) {
+    /* Endrer grid-malen for bredere skjermer */
+    #grid-container {
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
+    }
+
+    /* Viser den skjulte navigasjonsmenyen og skjuler menyikoner */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    /* Skjuler menyikoner i header */
+    #ham, .fa-magnifying-glass {
+        display: none;
+    }
+
+    /* Gjør flex-seksjoner som viser bilder og tekst ved siden av hverandre med mellomrom */
+    .flex-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Reduserer bildenes bredde til 50% i flex-seksjoner */
+    .flex-section img {
+        width: 50%;
+    }
+
+    /* Legger til litt mellomrom og justering i flex-seksjoner */
+    .flex-section section {
+        padding: 1rem;
+        width: 40%;
+        align-self: center;
+    }
+
+    /* Endrer rekkefølgen av bilde og tekst i høyrejusterte seksjoner */
+    .right img {
+        order: 1;
+    }
 }
