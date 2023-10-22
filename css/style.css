@@ -5,18 +5,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.flex-container {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    padding: 1rem;
-    margin-right: 10px;
-}
-
-#grid-container {
-    display: inline-block;
-}
-
 header, main, footer {
     padding: 1rem;
 }
@@ -114,6 +102,22 @@ h1 {
     display: grid;
 }
 
+.product {
+    float: left;
+    width: auto;
+}
+
+.shoe-angle {
+    width: 500px;
+    display: flex;
+    padding: 1rem 0;
+}
+
+.flex {
+    float: right;
+
+}
+
 .product-shoe {
     text-decoration: none;
     color: black;
@@ -123,13 +127,14 @@ h1 {
     background-color: #f7f7f7;
     padding: 1rem;
     margin: 1rem 0;
+    width: 400px;
 }
 
 .delivery-info {
     background-color: #f7f7f7;
     padding: 1rem;
     margin: 1rem 0;
-    justify-content: space-around;
+    width: 400px;
 }
 
 .offer {
@@ -156,7 +161,6 @@ h1 {
     font-weight: 400;
     text-align: center;
     width: 50%;
-    
 
 }
 
@@ -232,7 +236,6 @@ h1 {
     float: left;
 }
 
-
 footer ul li a {
     list-style: none; 
     font-size: 16px;
@@ -244,45 +247,23 @@ footer ul li a {
 }
 
 @media only screen and (min-width: 600px) {
-    /* Endrer grid-malen for bredere skjermer */
-    #grid-container {
-        grid-template-areas: "header header header" "main main main" "footer footer footer";
-    }
-
-    .grid{
-        display: flex;
-        grid-template-columns: auto auto auto ;
-    }
-    /* Viser den skjulte navigasjonsmenyen og skjuler menyikoner */
     .navbar {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        text-decoration: none;
         list-style: none;
         margin: 0;
     }
 
-    /* Skjuler menyikoner i header */
     #ham, .fa-magnifying-glass {
         display: none;
     }
 
-    /* Gjør flex-seksjoner som viser bilder og tekst ved siden av hverandre med mellomrom */
-    .flex-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .flex-section img {
+    .product {
+        float: left;
         width: 50%;
-    }
-
-    /* Legger til litt mellomrom og justering i flex-seksjoner */
-    .flex-section section {
         padding: 1rem;
-        width: 40%;
-        align-self: center;
     }
 
     .img {
@@ -305,4 +286,12 @@ footer ul li a {
         align-self: center;
         padding-left: 0%;
     }
+
+    .shoe-angle {
+        display: flex;
+        padding: 1rem 0;
+        justify-content: space-between;
+    }
+
+
 }
