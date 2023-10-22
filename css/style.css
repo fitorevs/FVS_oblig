@@ -99,23 +99,12 @@ h1 {
 }
 
 .shoe-info{
-    display: grid;
+    display: inline-block;
 }
 
 .product {
     float: left;
     width: auto;
-}
-
-.shoe-angle {
-    width: 500px;
-    display: flex;
-    padding: 1rem 0;
-}
-
-.flex {
-    float: right;
-
 }
 
 .product-shoe {
@@ -161,6 +150,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     width: 50%;
+    margin-left: 5rem;
 
 }
 
@@ -208,9 +198,14 @@ h1 {
 .img {
     display: inline-block;
     grid-template-columns: auto auto auto;
-
 }
 
+.img2 {
+    display: inline-block;
+    grid-template-columns: auto auto auto;
+    width: 25%;
+    
+}
 
 .site-footer {
     background-color: #C6BBBB;
@@ -266,10 +261,23 @@ footer ul li a {
         padding: 1rem;
     }
 
+    .shoe-info{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+
     .img {
         display: inline-block;
         padding: 1rem;
         width: 20%;
+    }
+
+    .img2 {
+        display: inline-block;
+        padding: 1rem 0;
+        width: 10%;
     }
         
     .buttons {
@@ -279,19 +287,17 @@ footer ul li a {
         padding-left: 0%;
 
     }
+
+    .offer {
+        width: 50%;
+        
+    }
     
     .read-more-btn, .sign-up-btn {
         padding: 1rem;
         width: 30%;
-        align-self: center;
-        padding-left: 0%;
     }
 
-    .shoe-angle {
-        display: flex;
-        padding: 1rem 0;
-        justify-content: space-between;
-    }
 
 
 }
