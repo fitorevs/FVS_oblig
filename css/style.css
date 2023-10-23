@@ -31,6 +31,17 @@ header nav {
     text-decoration: none;
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    font-size: small;
+    padding-left: 0;
+    margin: 0.5rem;
+    padding-bottom: 2rem;
+}
+
 #logo {
     text-decoration: none;
     color: #fff;
@@ -338,7 +349,7 @@ footer ul li a {
 
 @media only screen and (min-width: 600px) {
     .navbar {
-        display: flex;
+        display: none;
         flex-direction: row;
         gap: 1rem;
         text-decoration: none;
@@ -346,8 +357,16 @@ footer ul li a {
         margin: 0;
     }
 
+    .navigation {
+        display: flex;
+    }
+
     #ham, .fa-magnifying-glass {
         display: none;
+    }
+
+    .icons {
+        justify-items: right;
     }
 
     .h1 {
@@ -424,8 +443,5 @@ footer ul li a {
         align-items: center;
         padding: 1rem;
         width: 30%;
-
     }
-
-
 }
