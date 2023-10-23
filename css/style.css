@@ -135,6 +135,15 @@ h1 {
     font-weight: 400;
 }
 
+.h3-related {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.h3-color {
+    margin-top: 3rem;
+}
+
 main {
     grid-area: main;
 }
@@ -178,13 +187,23 @@ main section img {
     padding: 1rem;
     margin: 2rem 0;
     width: 400px;
-    
+}
+
+.product-info {
+    padding-top: 3rem;
 }
 
 .delivery-info {
     background-color: #f7f7f7;
     padding: 1rem;
     margin: 1rem 0;
+    width: 400px;
+}
+
+.safe-trade {
+    display: flex;
+    padding: 1rem;
+    background-color: #f7f7f7;
     width: 400px;
 }
 
@@ -335,6 +354,10 @@ footer ul li a {
         font-size: 40px
     }
 
+    .shop-now-btn{
+        margin-right: 1rem;
+    }
+
     .product {
         float: left;
         width: 40%;
@@ -342,8 +365,9 @@ footer ul li a {
     }
 
     .product-details {
-        margin-top: 5rem;
-        
+        display: inline-block;
+        grid-template-columns: auto;
+        width: 1300px;
     }
 
     .shoe-info{
@@ -355,6 +379,12 @@ footer ul li a {
     .shoe-size {
         justify-content: space-between;
         width: 55%;
+    }
+
+    .safe-trade {
+        display: flex;
+        background-color: #f7f7f7;
+        width: 400px;
     }
 
     .img {
@@ -373,7 +403,6 @@ footer ul li a {
         display: inline-block;
         padding: 1rem;
         width: 20%; 
-      
     }
         
     .buttons {
@@ -381,7 +410,6 @@ footer ul li a {
         width: 30%;
         align-self: center;
         padding-left: 0%;
-
     }
 
     .offer {
