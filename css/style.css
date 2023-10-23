@@ -10,9 +10,7 @@ body {
     grid-template-areas: "header" "main" "footer";
 }
 
-header,
-main,
-footer {
+header, main, footer {
     padding: 1.5rem;
 }
 
@@ -111,9 +109,7 @@ h1 {
     font-size: 15px;
 }
 
-.h3,
-.h4,
-.p {
+.h3, .h4, .p {
     font-size: 10px;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
@@ -232,8 +228,7 @@ main section img {
     font-size: 10px;
 }
 
-.read-more-btn,
-.sign-up-btn {
+.read-more-btn, .sign-up-btn {
     display: inline-block;
     padding: 1rem;
     margin: 0.5rem;
@@ -323,19 +318,13 @@ main section img {
     margin: 0;
 }
 
-.help,
-.profile,
-.contact,
-.terms,
-.snkr,
-.social-media {
+.help, .profile, .contact, .terms, .snkr, .social-media {
     text-decoration: none;
     list-style: none;
     padding: 1rem;
 }
 
-.fa-facebook,
-.fa-instagram {
+.fa-facebook, .fa-instagram {
     font-weight: 100;
     font-size: 40px;
     padding: 0.5rem;
@@ -354,10 +343,6 @@ footer ul li a {
 }
 
 @media only screen and (min-width: 600px) {
-    body {
-        align-items: center;
-    }
-
     .navbar {
         display: none;
         flex-direction: row;
@@ -372,11 +357,13 @@ footer ul li a {
         text-decoration: none;
     }
 
+    body {
+        align-items: center;
+    }
+
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
     }
-
-
 
     .icons {
         justify-items: right;
@@ -447,10 +434,10 @@ footer ul li a {
     #medlem-lesmer {
         display: flex;
         align-items: center;
+        margin-left: 8rem;
     }
 
-    .read-more-btn,
-    .sign-up-btn {
+    .read-more-btn, .sign-up-btn {
         display: flex;
         justify-content: center;
         padding: 1rem;
