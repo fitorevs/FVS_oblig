@@ -11,12 +11,12 @@ body {
 }
 
 header, main, footer {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 header {
     background-color: #C6BBBB;
-    font-size: 1rem;
+    font-size: 1.25em;
     font-weight: 600;
     grid-area: header;
     align-items: baseline;
@@ -36,9 +36,8 @@ header nav {
     justify-content: space-between;
     text-decoration: none;
     list-style: none;
-    font-size: small;
+    font-size: 11px;
     padding-left: 0;
-    margin: 0.5rem;
     padding-bottom: 2rem;
 }
 
@@ -46,7 +45,7 @@ header nav {
     text-decoration: none;
     color: #fff;
     font-style: italic;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .menu-bar {
@@ -353,13 +352,14 @@ footer ul li a {
         display: none;
         flex-direction: row;
         gap: 1rem;
-        text-decoration: none;
         list-style: none;
         margin: 0;
     }
 
     .navigation {
         display: flex;
+        font-size: large;
+        text-decoration: none;
     }
 
     #ham, .fa-magnifying-glass {
