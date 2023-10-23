@@ -176,7 +176,8 @@ main section img {
 .shoe-size {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding-right: 2rem;
+    margin-left: 1rem;
 }
 
 .product {
