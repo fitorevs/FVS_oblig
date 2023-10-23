@@ -351,6 +351,7 @@ footer ul li a {
         list-style: none;
         margin: 0;
     }
+    /*Ham-meny vil ikke bli synlig i desktop-versjon.*/
 
     .navigation {
         display: flex;
