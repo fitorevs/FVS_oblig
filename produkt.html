@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Produktside for SNKR</title>
 </head>
-    <body>
+<body>
+    <div id="grid-container">
         <header>
             <nav>
                 <a href="index.html" id="logo">SNKR.</a>
@@ -37,7 +38,7 @@
                 <a href="index.html" class="left-btn"><i class="fa-solid fa-arrow-left"></i></a>
             </span>
             <section>
-                <h5>Hjem / Herresko / Sneakers / Air Max 90</h5>
+                <h5 class="h5">Hjem / Herresko / Sneakers / Air Max 90</h5>
             </section>
             <section class="product">
                 <img src="img/air-max-90.webp" alt="Skobilde av Nike Air Max 90"> <!--Kilde: Bilde hentet fra Nike.com: https://www.nike.com/no/en/t/air-max-90-shoes-QKmdVV/FN8005-100-->
@@ -91,9 +92,9 @@
                     </section>
                 </article>
             </section>
-            <section>
+            <section class="product-details">
                 <h3>Produktinformasjon</h3>
-                <article class="product-info">
+                <article>
                     <h4>Produktdetaljer</h4>
                     <p>Artikkelnummer:</p>
                     <p>Produktgruppe:</p>
@@ -249,6 +250,7 @@
                 <li><i class="fa-brands fa-instagram"></i>
             </ul>
         </footer>
+    </div>
     <script>
         let x = document.querySelector(".navbar")
         document.getElementById("ham").addEventListener("click", (e) => {
