@@ -38,7 +38,9 @@ header nav {
     list-style: none;
     font-size: 11px;
     padding-left: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    color: black;
+
 }
 
 #logo {
