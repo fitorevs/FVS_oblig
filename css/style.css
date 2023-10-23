@@ -40,7 +40,6 @@ header nav {
     padding-left: 0;
     padding-bottom: 1rem;
     color: black;
-
 }
 
 #logo {
@@ -50,12 +49,6 @@ header nav {
     font-size: 22px;
 }
 
-.menu-bar {
-    color: #fff;
-    margin-top: auto;
-    width: auto;
-}
-
 .icons {
     color: #fff;
     margin-top: auto;
@@ -63,6 +56,7 @@ header nav {
 
 .navbar {
     display: none;
+    font-size: medium;
 }
 
 .responsive {
@@ -360,7 +354,7 @@ footer ul li a {
 
     .navigation {
         display: flex;
-        font-size: large;
+        font-size: medium;
         text-decoration: none;
     }
 
